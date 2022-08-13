@@ -8,6 +8,7 @@
 - ☑️ Add test framework jest
 - ☑️ Typescript tests
 - ☑️ Interaction test examples
+- ☑️ Jest should work with components that have css imports
 - Integrere MF fra github repoet.
 - react-router-dom 6
 - i18n
