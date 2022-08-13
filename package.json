@@ -31,6 +31,7 @@
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^28.1.3",
     "jest-environment-jsdom": "^28.1.3",
     "prettier": "2.7.1",
@@ -57,7 +58,10 @@
     "testEnvironment": "jsdom",
     "setupFilesAfterEnv": [
       "@testing-library/jest-dom/extend-expect"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/identity-obj-proxy"
+    }
   },
   "browserslist": [
     ">0.2%",
