@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "test": "jest --coverage"
   },
   "keywords": [],
   "author": "",
@@ -21,14 +22,20 @@
     "@babel/plugin-transform-runtime": "^7.18.10",
     "@babel/preset-env": "^7.18.10",
     "@babel/preset-react": "^7.18.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/user-event": "^14.4.3",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "babel-loader": "^8.2.5",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
     "prettier": "2.7.1",
     "style-loader": "^3.3.1",
+    "ts-jest": "^28.0.7",
     "ts-loader": "^9.3.1",
     "typescript": "~4.5",
     "webpack": "^5.74.0",
@@ -43,6 +50,13 @@
     "presets": [
       "@babel/preset-react",
       "@babel/preset-typescript"
+    ]
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
     ]
   },
   "browserslist": [
