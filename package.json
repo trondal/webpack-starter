@@ -7,7 +7,7 @@
     "dev": "webpack serve",
     "build": "webpack",
     "test": "jest --coverage",
-    "lint": "eslint . --ext .jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "keywords": [],
   "author": "",
@@ -106,6 +106,12 @@
     ],
     "rules": {}
   },
+  "eslintIgnore": [
+    "node_modules",
+    "coverage",
+    "dist",
+    "webpack.config.js"
+  ],
   "browserslist": [
     ">0.2%",
     "not dead",
