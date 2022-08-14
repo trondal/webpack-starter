@@ -1,9 +1,7 @@
 import React from 'react';
 import ExampleCounter from './components/ExampleCounter';
 
-const App = () => {
-  const date = new Date();
-
+function App() {
   return (
     <div>
       <h1>
@@ -12,6 +10,6 @@ const App = () => {
       <ExampleCounter text="Click me" />
     </div>
   );
-};
+}
 
 export default App;

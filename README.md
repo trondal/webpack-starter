@@ -9,6 +9,7 @@
 - ☑️ Typescript tests
 - ☑️ Interaction test examples
 - ☑️ Jest should work with components that have css imports
+- ☑️ Eslint: should had Airbnb and Jest support without opinionated style
 - Integrere MF fra github repoet.
 - react-router-dom 6
 - i18n
